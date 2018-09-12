@@ -14,5 +14,9 @@ public class TestNewDateApi {
         LocalDateTime ldt = LocalDateTime.now();
         String startTime = ldt.format(dft);
         System.out.println(startTime);
+
+        DateTimeFormatter dtf2 = DateTimeFormatter.ofPattern("yyyy年MM月dd日 HH:mm:ss");
+        String strDate = dtf2.format(ldt);
+        System.out.println("年月日"+strDate);
     }
 }
